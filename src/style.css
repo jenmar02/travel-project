@@ -1,7 +1,70 @@
-h1 {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
+:root {
+  --poppins-font: "Poppins", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/big-ben-bridge.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 265px 0;
+}
+header h1,
+header h2,
+header h3,
+header a {
+  margin: 0;
+  line-height: 1.5;
+}
+header h1 {
   font-size: 96px;
-  line-height: 144px;
+  opacity: 0.9;
+}
+header h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 38px;
+  opacity: 0.8;
+}
+header h3 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  font-weight: bolder;
+  opacity: 0.8;
+}
+header a {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  background: white;
+  color: #272044;
+  text-decoration: none;
+  padding: 16px 32px;
+}
+.container {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 120px 0;
+  }
+  header h1 {
+    font-size: 35px;
+    margin-top: 10px;
+  }
+  header h2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  header h3 {
+    font-size: 15px;
+  }
+  header a {
+    font-size: 10px;
+    padding: 13px 28px;
+  }
 }
