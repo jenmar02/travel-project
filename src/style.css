@@ -75,11 +75,18 @@ section {
   background-color: white;
   margin: 30px 0;
 }
+.card-header.grid {
+  grid-gap: 0;
+}
 .card-body {
   padding: 30px;
 }
 .card-footer {
   padding: 0 30px 30px;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 main h2 {
   font-size: 16px;
@@ -121,7 +128,7 @@ footer {
       rgba(39, 32, 68, 0.9),
       rgba(39, 32, 68, 0.9)
     ),
-    url("../img/night-life.jpg");
+    url("../img/chapel.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -147,16 +154,12 @@ footer a {
   opacity: 0.7;
 }
 .sagrada-familia {
-  max-width: 570px;
+  width: 570px;
   max-height: 461px;
 }
 .img-responsive {
-  max-width: 100%;
-  display: block;
-}
-.resize-img {
-  max-width: 185px;
-  max-height: 185px;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 .activity-btn {
   display: block;
@@ -203,5 +206,11 @@ footer a {
   .sagrada-familia {
     display: block;
     margin: 0 auto;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
