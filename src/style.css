@@ -208,6 +208,9 @@ footer a {
 .header-gap {
   margin-bottom: 20px;
 }
+.filter {
+  filter: brightness(1) grayscale(20%);
+}
 @media (max-width: 900px) {
   header {
     padding: 120px 0;
