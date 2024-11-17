@@ -1,5 +1,5 @@
 :root {
-  --poppins-font: "Poppins", sans-serif;
+  --noir-color: #272044;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -9,8 +9,13 @@ body {
 }
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 40px;
+}
+.grid-2-col {
+  grid-template-columns: 1fr 1fr;
+}
+.grid-3-col {
+  grid-template-columns: 1fr 2fr 2fr;
 }
 header {
   text-align: center;
@@ -48,7 +53,7 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  color: #272044;
+  color: var(--noir-color);
   font-weight: bold;
   letter-spacing: 3px;
   background: white;
@@ -59,6 +64,29 @@ header a {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
+}
+main h2 {
+  font-size: 16px;
+  opacity: 0.3;
+  letter-spacing: 5px;
+  color: var(--noir-color);
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin: 0;
+}
+main h3 {
+  font-size: 38px;
+  line-height: 50px;
+  color: var(--noir-color);
+  line-height: 1.5;
+  margin: 0;
+}
+main p {
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 1.5;
+  color: var(--noir-color);
 }
 footer {
   color: white;
@@ -69,7 +97,6 @@ footer {
     url("../img/night-life.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
 }
 footer h3 {
   font-size: 18px;
@@ -92,6 +119,13 @@ footer a {
   color: white;
   opacity: 0.7;
 }
+.sagrada-familia {
+  max-width: 570px;
+  max-height: 461px;
+}
+.img-responsive {
+  max-width: 100%;
+}
 @media (max-width: 900px) {
   header {
     padding: 120px 0;
@@ -110,5 +144,20 @@ footer a {
   header a {
     font-size: 10px;
     padding: 13px 28px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  .grid-3-col {
+    grid-gap: 10px;
+  }
+  section {
+    padding: 30px 0;
+    text-align: center;
+  }
+  .sagrada-familia {
+    display: block;
+    margin: 0 auto;
   }
 }
