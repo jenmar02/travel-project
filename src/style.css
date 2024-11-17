@@ -17,6 +17,9 @@ body {
 .grid-3-col {
   grid-template-columns: 1fr 2fr 2fr;
 }
+.grid-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
 header {
   text-align: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
@@ -62,9 +65,21 @@ header a {
   margin-top: 32px;
 }
 section {
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
+}
+.secondary {
+  background: #f8f8f8;
+}
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
 }
 main h2 {
   font-size: 16px;
@@ -80,6 +95,18 @@ main h3 {
   line-height: 50px;
   color: var(--noir-color);
   line-height: 1.5;
+  margin: 0;
+}
+main h4 {
+  font-size: 24px;
+  color: var(--noir-color);
+  line-height: 1;
+  margin: 0;
+}
+main h5 {
+  font-size: 13px;
+  color: var(--noir-color);
+  line-height: 1;
   margin: 0;
 }
 main p {
@@ -125,6 +152,23 @@ footer a {
 }
 .img-responsive {
   max-width: 100%;
+  display: block;
+}
+.resize-img {
+  max-width: 185px;
+  max-height: 185px;
+}
+.activity-btn {
+  display: block;
+  color: white;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background: #462cb2;
+  padding: 16px;
+  text-decoration: none;
 }
 @media (max-width: 900px) {
   header {
