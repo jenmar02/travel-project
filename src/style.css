@@ -66,7 +66,7 @@ header a {
 }
 section {
   margin: 0 auto;
-  padding: 100px;
+  padding: 80px;
 }
 .secondary {
   background: #f8f8f8;
@@ -121,6 +121,23 @@ main p {
   opacity: 0.7;
   line-height: 1.5;
   color: var(--noir-color);
+}
+table {
+  border: 1px solid lightgray;
+  text-align: center;
+  margin: 0 auto;
+}
+thead {
+  background: #8874e0;
+}
+th {
+  text-transform: uppercase;
+}
+td {
+  border-top: 1px solid lightgray;
+}
+.table-container {
+  overflow-x: auto;
 }
 footer {
   color: white;
@@ -178,6 +195,18 @@ footer a {
 }
 .text-center {
   text-align: center;
+}
+.video-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.video-embed {
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+.header-gap {
+  margin-bottom: 20px;
 }
 @media (max-width: 900px) {
   header {
